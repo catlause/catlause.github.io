@@ -25,15 +25,15 @@ compile error: `a label can only be part of a statement and a declaration is not
 
 buggy edit
 ```c
-    apr_off_t offset = bufpos+bufsize;
+	apr_off_t offset = bufpos+bufsize;
 BADNEXTRESTORE:
-    stcode = apr_file_seek(fc->cachefp, APR_SET, &offset);
+	stcode = apr_file_seek(fc->cachefp, APR_SET, &offset);
 ```
 
 debug edit
 ```c
-    apr_off_t offset;
+	apr_off_t offset;
 BADNEXTRESTORE:
-    offset = bufpos+bufsize;
+	offset = bufpos+bufsize;
 	stcode = apr_file_seek(fc->cachefp, APR_SET, &offset);
 ```

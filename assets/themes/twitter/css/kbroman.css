@@ -4,10 +4,10 @@ code {
   color: black;
   background-color: white;
   border: 0px solid white;
+  -moz-tab-size: 4;
+  tab-size: 4;
 }
 
 a code {
-  -moz-tab-size: 4;
-  tab-size: 4;
   color: #08c;
 }
